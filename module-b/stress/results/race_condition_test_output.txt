@@ -1,0 +1,23 @@
+======================================================================
+MODULE B: Race Condition Tests
+======================================================================
+
+--- Race Condition Test: Room Allocation ---
+  Created test room_id=21 with capacity=2
+  Created 5 test students
+  Pre-test: room occupancy=0, capacity=2
+  Launching 5 concurrent allocation attempts...
+  Post-test: room occupancy=5, capacity=2
+  [RACE CONDITION DETECTED] Occupancy (5) exceeds capacity (2)
+  Active allocations for this room: 5
+
+  Results (0.02s):
+    Successful allocations: 5
+    Failed allocations:     0
+
+--- Race Condition Test: Gate Pass Approval ---
+  [SKIP] No pending gate passes found.
+
+======================================================================
+Race condition DETECTED - occupancy exceeded capacity under concurrent load.
+======================================================================

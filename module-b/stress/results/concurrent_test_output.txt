@@ -1,0 +1,14 @@
+======================================================================
+MODULE B: Concurrent User Simulation
+======================================================================
+[WARN] User login failed. Some tests may be skipped.
+
+Using token from: admin
+
+Launching 25 concurrent workers (5 users x 5 resources)...
+
+Results (0.06s):
+  Successful: 25
+  Failed:     0
+
+[PASS] Concurrent user simulation: 25/25 requests succeeded

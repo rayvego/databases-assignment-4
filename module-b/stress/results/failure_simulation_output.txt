@@ -1,0 +1,24 @@
+======================================================================
+MODULE B: Failure Simulation
+======================================================================
+
+--- Failure Simulation: Invalid Data Rejection ---
+  [OK] Missing required fields rejected
+  [OK] Non-existent foreign key rejected
+  [OK] Invalid data type rejected
+  [OK] Empty request body rejected
+
+--- Failure Simulation: Concurrent Valid + Invalid Requests ---
+  Pre-test: 26 allocations
+  Post-test: 26 allocations
+  Valid requests: 0 succeeded, 5 failed
+  Invalid requests: 5 rejected, 0 accepted
+  [OK] All invalid requests were correctly rejected
+
+--- Failure Simulation: Unauthorized Access ---
+  [OK] Unauthenticated access rejected (401)
+  [OK] Invalid token rejected (401)
+
+======================================================================
+Results: 6 valid, 0 invalid
+======================================================================

@@ -1,0 +1,6 @@
+graphviz
+matplotlib
+jupyter
+ipython
+pandas
+memory-profiler
